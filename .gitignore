@@ -1,0 +1,13 @@
+# .gitignore
+__pycache__/
+*.pyc
+.env
+.venv/
+.cache/
+.ipynb_checkpoints/
+data/raw/
+vector_store/
+models/embedding/
+models/generator/
+docs/figures/
+notebooks/.ipynb_checkpoints/

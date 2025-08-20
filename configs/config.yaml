@@ -1,0 +1,29 @@
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  vector_store_dir: vector_store
+  chunks_parquet: data/processed/chunks.parquet
+  filtered_csv: data/processed/filtered_complaints.csv
+
+products:
+  - credit card
+  - personal loan
+  - buy now, pay later
+  - savings account
+  - money transfer
+
+embedding:
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: 64
+  normalize: true
+
+chunking:
+  size: 800
+  overlap: 120
+
+retrieval:
+  top_k: 5
+
+generation:
+  model: gpt-4o-mini
+  max_tokens: 500
